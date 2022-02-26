@@ -68,3 +68,9 @@ The mouse and keystroke features are saved under **data/features***.
 ### Running the cross validation
 ```shell
 python3 classification/classification.py
+
+## Project Team members
+
+* [**Arash Habibi Lashkari:**](https://github.com/ahlashkari) Supervisor
+* [**Ashley Sarah Barkworth:**](https://github.com/ashleybarkworth) Research and Development (MCS Student)
+* [**Rehnuma Tabassum:**](https://github.com/rehnuma777) Research and Development (MCS Student)
