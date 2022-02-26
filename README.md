@@ -69,8 +69,8 @@ The mouse and keystroke features are saved under **data/features***.
 ```shell
 python3 classification/classification.py
 
-## Project Team members
+### Project Team members
 
-* [**Arash Habibi Lashkari:**](http://ahlashkari.com/index.asp) Supervisor
+* [Arash Habibi Lashkari:](http://ahlashkari.com/index.asp) Supervisor
 * [**Ashley Sarah Barkworth:**](https://github.com/ashleybarkworth) Research and Development (MCS Student)
 * [**Rehnuma Tabassum:**](https://github.com/rehnuma777) Research and Development (MCS Student)
