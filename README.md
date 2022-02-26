@@ -1,6 +1,5 @@
 # IMAPBotDetection
 
-##Introduction
 
 Credential stuffing is an attack that obtains stolen account credentials, usually sourced from data breaches. It is a technique used to exploit the fact that many people use the same username and password for multiple accounts.
 Credential stuffing has become a great matter of concern for the Internet Mail Access Protocol (IMAP), a popular method for accessing electronic mail and news messages maintained on a remote server. A significant vulnerability in IMAP and other legacy email protocols is that it cannot support MFA and depends on only a username and password for authentication, leaving it susceptible to credential stuffing.
