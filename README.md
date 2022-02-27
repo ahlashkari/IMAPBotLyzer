@@ -6,6 +6,12 @@ Credential stuffing has become a great matter of concern for the Internet Mail A
 
 As bots generally carry out credential stuffing attacks, a promising countermeasure is to identify and block them before they can login. Our objective is to use two types of behavioral biometrics -  mouse dynamics and keystroke dynamics - to distinguish between bots and humans. In this project,  we introduced a supervised learning bot detection system using mouse and keystroke dynamics and compared the classification of the Random Forest(RF), Decision Tree(DT), Support Vector Machine(SVM), and K-Nearest Neighbors(KNN) machine learning algorithms to identify which model achieves the best overall result.
 
+
+## Extracted Features 
+
+
+
+
 ## Overview
 
 ___
@@ -37,11 +43,6 @@ ___
 * pynput
 * Scikit-learn
 * SciPy
-
-
-## Extracted Features 
-
-
 
 
 ## How to Use
