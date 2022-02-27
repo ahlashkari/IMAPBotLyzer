@@ -1,4 +1,4 @@
-# IMAPBotDetection
+# IMAP Bot AnaLyzer (IMAPBotLyzer)
 
 
 Credential stuffing is an attack that obtains stolen account credentials, usually sourced from data breaches. It is a technique used to exploit the fact that many people use the same username and password for multiple accounts.
