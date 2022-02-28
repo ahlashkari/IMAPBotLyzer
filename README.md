@@ -171,7 +171,6 @@ After computing the set of features values for each mouse and keystroke feature,
 
 ## Overview
 
-___
 
 There are multiple modules in the program:
 * `app` is the GUI with the three tasks to complete, namely:
