@@ -189,7 +189,6 @@ There are multiple modules in the program:
 
 ## Dependencies
 
-___
 
 * Pillow
 * PyAutoGUI
@@ -204,7 +203,6 @@ ___
 
 ## How to Use
 
-___
 
 ### Running the app
 To run the app without the bots:
@@ -240,7 +238,8 @@ The mouse and keystroke features are saved under **data/features***.
 python3 classification/classification.py
 
 ```
-### Project Team members
+
+## Project Team members
 
 * [**Arash Habibi Lashkari:**](http://ahlashkari.com/index.asp) Supervisor
 * [**Ashley Sarah Barkworth:**](https://www.linkedin.com/in/ashley-barkworth/) Research and Development (MCS student)
