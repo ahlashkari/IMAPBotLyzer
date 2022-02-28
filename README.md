@@ -31,7 +31,7 @@ To extract mouse features, the mouse events are parsed and grouped to form actio
 
 After computing the set of features values for each mouse and keystroke feature, the average, standard deviation, maximum, and minimum values are calculated over each set. In the end, a total of 131 features are calculated from keystroke and mouse movements which are:
 
-###keystroke
+### Keystroke
 
 * Average hold time
 * Max hold time
@@ -51,7 +51,7 @@ After computing the set of features values for each mouse and keystroke feature,
 * SD Press Latency
 
 
-##Mouse
+### Mouse
 * num_actions
 * total_duration
 * mm_avg_v
