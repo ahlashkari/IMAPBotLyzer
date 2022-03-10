@@ -22,16 +22,17 @@ To extract mouse features, the mouse events are parsed and grouped to form actio
 3. Jerk
 4. Duration
 5. Straightness
-6. Number of events
+6. Number of events(points)
 7. Curvature
 8. Maximum deviation
 9. Sum of angles
 10. Click time(PC actions)
 
-After computing the set of features values for each mouse and keystroke feature, the average, standard deviation, maximum, and minimum values are calculated over each set. In the end, a total of 131 features are calculated from keystroke and mouse movements which are:
+After computing the set of features values for each mouse and keystroke feature, the average, standard deviation, maximum, and minimum values are calculated over each set of actions. Three additional features are calculated: the total time taken to complete the typing activity; the total time taken to complete the mouse activities; and the total number of mouse actions. In the end, a total of 131 features are calculated from keystroke and mouse movements which are:
 
 ### Keystroke:
 
+* Total time taken (typing activity)
 * Average hold time
 * Max hold time
 * Min hold time
@@ -52,121 +53,120 @@ After computing the set of features values for each mouse and keystroke feature,
 
 ### Mouse:
 
-* num_actions
-* total_duration
-* mm_avg_v
-* mm_sd_v
-* mm_max_v
-* mm_min_v
-* mm_avg_a
-* mm_sd_a
-* mm_max_a
-* mm_min_a
-* mm_avg_j
-* mm_sd_j
-* mm_max_j
-* mm_min_j
-* mm_avg_duration
-* mm_sd_duration
-* mm_max_duration
-* mm_min_duration
-* mm_avg_straightness
-* mm_sd_straightness
-* mm_max_straightness
-* mm_min_straightness
-* mm_avg_num_points
-* mm_sd_num_points
-* mm_max_num_points
-* mm_min_num_points
-* mm_avg_curvature
-* mm_sd_curvature
-* mm_max_curvature
-* mm_min_curvature
-* mm_avg_angle_sum
-* mm_sd_angle_sum
-* mm_max_angle_sum
-* mm_min_angle_sum
-* mm_avg_max_deviation
-* mm_sd_max_deviation
-* mm_max_max_deviation
-* mm_min_max_deviation
-* pc_avg_v
-* pc_sd_v
-* pc_max_v
-* pc_min_v
-* pc_avg_a
-* pc_sd_a
-* pc_max_a
-* pc_min_a
-* pc_avg_j
-* pc_sd_j
-* pc_max_j
-* pc_min_j
-* pc_avg_duration
-* pc_sd_duration
-* pc_max_duration
-* pc_min_duration
-* pc_avg_straightness
-* pc_sd_straightness
-* pc_max_straightness
-* pc_min_straightness
-* pc_avg_num_points
-* pc_sd_num_points
-* pc_max_num_points
-* pc_min_num_points
-* pc_avg_curvature
-* pc_sd_curvature
-* pc_max_curvature
-* pc_min_curvature
-* pc_avg_angle_sum
-* pc_sd_angle_sum
-* pc_max_angle_sum
-* pc_min_angle_sum
-* pc_avg_max_deviation
-* pc_sd_max_deviation
-* pc_max_max_deviation
-* pc_min_max_deviation
-* pc_avg_click_time
-* pc_sd_click_time
-* pc_max_click_time
-* pc_min_click_time
-* dd_avg_v
-* dd_sd_v
-* dd_max_v
-* dd_min_v
-* dd_avg_a
-* dd_sd_a
-* dd_max_a
-* dd_min_a
-* dd_avg_j
-* dd_sd_j
-* pc_max_j
-* pc_min_j
-* dd_avg_duration
-* dd_sd_duration
-* dd_max_duration
-* dd_min_duration
-* dd_avg_straightness
-* dd_sd_straightness
-* dd_max_straightness
-* dd_min_straightness
-* dd_avg_num_points
-* dd_sd_num_points
-* dd_max_num_points
-* dd_min_num_points
-* dd_avg_curvature
-* dd_sd_curvature
-* dd_max_curvature
-* dd_min_curvature
-* dd_avg_angle_sum
-* dd_sd_angle_sum
-* dd_max_angle_sum
-* dd_min_angle_sum
-* dd_avg_max_deviation
-* dd_sd_max_deviation
-* dd_max_max_deviation
-* dd_min_max_deviation
-
+* Total number of mouse actions (MM, PC, and DD)
+* Total time taken (mouse activities)
+* Average Velocity (MM actions)
+* SD Velocity (MM actions)
+* Max Velocity (MM actions)
+* Min Velocity (MM actions)
+* Average Acceleration (MM actions)
+* SD Acceleration (MM actions)
+* Max Acceleration (MM actions)
+* Min Acceleration (MM actions)
+* Average Jerk (MM actions)
+* SD Jerk (MM actions)
+* Max Jerk (MM actions)
+* Min Jerk (MM actions)
+* Average Duration (MM actions)
+* SD Duration (MM actions)
+* Max Duration (MM actions)
+* Min Duration (MM actions)
+* Average Straightness (MM actions)
+* SD Straightness (MM actions)
+* Max Straightness (MM actions)
+* Min Straightness (MM actions)
+* Average Number of Points (MM actions)
+* SD Number of Points (MM actions)
+* Max Number of Points (MM actions)
+* Min Number of Points (MM actions)
+* Average Curvature (MM actions)
+* SD Curvature (MM actions)
+* Max Curvature (MM actions)
+* Min Curvature (MM actions)
+* Average Sum of Angles (MM actions)
+* SD Sum of Angles (MM actions)
+* Max Sum of Angles (MM actions)
+* Min Sum of Angles (MM actions)
+* Average Max Deviation (MM actions)
+* SD Max Deviation (MM actions)
+* Max Max Deviation (MM actions)
+* Min Max Deviation (MM actions)
+* Average Velocity (PC actions)
+* SD Velocity (PC actions)
+* Max Velocity (PC actions)
+* Min Velocity (PC actions)
+* Average Acceleration (PC actions)
+* SD Acceleration (PC actions)
+* Max Acceleration (PC actions)
+* Min Acceleration (PC actions)
+* Average Jerk (PC actions)
+* SD Jerk (PC actions)
+* Max Jerk (PC actions)
+* Min Jerk (PC actions)
+* Average Duration (PC actions)
+* SD Duration (PC actions)
+* Max Duration (PC actions)
+* Min Duration (PC actions)
+* Average Straightness (PC actions)
+* SD Straightness (PC actions)
+* Max Straightness (PC actions)
+* Min Straightness (PC actions)
+* Average Number of Points (PC actions)
+* SD Number of Points (PC actions)
+* Max Number of Points (PC actions)
+* Min Number of Points (PC actions)
+* Average Curvature (PC actions)
+* SD Curvature (PC actions)
+* Max Curvature (PC actions)
+* Min Curvature (PC actions)
+* Average Sum of Angles (PC actions)
+* SD Sum of Angles (PC actions)
+* Max Sum of Angles (PC actions)
+* Min Sum of Angles (PC actions)
+* Average Max Deviation (PC actions)
+* SD Max Deviation (PC actions)
+* Max Max Deviation (PC actions)
+* Min Max Deviation (PC actions)
+* Average Click Time (PC actions)
+* SD Click Time (PC actions)
+* Max Click Time (PC actions)
+* Min Click Time (PC actions)
+* Average Velocity (DD actions)
+* SD Velocity (DD actions)
+* Max Velocity (DD actions)
+* Min Velocity (DD actions)
+* Average Acceleration (DD actions)
+* SD Acceleration (DD actions)
+* Max Acceleration (DD actions)
+* Min Acceleration (DD actions)
+* Average Jerk (DD actions)
+* SD Jerk (DD actions)
+* Max Jerk (DD actions)
+* Min Jerk (DD actions)
+* Average Duration (DD actions)
+* SD Duration (DD actions)
+* Max Duration (DD actions)
+* Min Duration (DD actions)
+* Average Straightness (DD actions)
+* SD Straightness (DD actions)
+* Max Straightness (DD actions)
+* Min Straightness (DD actions)
+* Average Number of Points (DD actions)
+* SD Number of Points (DD actions)
+* Max Number of Points (DD actions)
+* Min Number of Points (DD actions)
+* Average Curvature (DD actions)
+* SD Curvature (DD actions)
+* Max Curvature (DD actions)
+* Min Curvature (DD actions)
+* Average Sum of Angles (DD actions)
+* SD Sum of Angles (DD actions)
+* Max Sum of Angles (DD actions)
+* Min Sum of Angles (DD actions)
+* Average Max Deviation (DD actions)
+* SD Max Deviation (DD actions)
+* Max Max Deviation (DD actions)
+* Min Max Deviation (DD actions)
 
 
 ## Overview
@@ -240,15 +240,15 @@ python3 classification/classification.py
 
 ## Copyright (c) 2020 
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (DoHLyzer), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (IMAPBotLyzer), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  
-For citation in your works and also understanding DoHLyzer completely, you can find below published paper:
+For citation in your works and also understanding IMAPBotLyzer completely, you can find below published paper:
 
-"Detection of DoH Tunnels using Time-series Classification of Encrypted Traffic", Ashley Barkworth, Rehnuma Tabassum and Arash Habibi Lashkari, The ACM Symposium on Access Control Models and Technologies (ACM SACMAT 2022), Arizona, USA, 2022 (Submitted)
+"Detecting IMAP Credential Stuﬃng Bots Using Behavioural Biometrics", Ashley Barkworth, Rehnuma Tabassum and Arash Habibi Lashkari, The ACM Symposium on Access Control Models and Technologies (ACM SACMAT 2022), Arizona, USA, 2022 (Submitted)
 ```
 
 ## Project Team members
