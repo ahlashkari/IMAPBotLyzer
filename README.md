@@ -248,7 +248,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  
 For citation in your works and also understanding IMAPBotLyzer completely, you can find below published paper:
 
-"Detecting IMAP Credential Stuﬃng Bots Using Behavioural Biometrics", Ashley Barkworth, Rehnuma Tabassum and Arash Habibi Lashkari, The IEEE Reconciling Data Analytics, Automation, Privacy, and Security: A Big Data Challenge (RDAAPS 2022), Madrid, Spain (Submitted)
+"Detecting IMAP Credential Stuﬃng Bots Using Behavioural Biometrics", Ashley Barkworth, Rehnuma Tabassum and Arash Habibi Lashkari, Tthe 12th International Conference on Communication and Network Security (ICCNS2022), Beijing, China.  
 
 
 ## Project Team members
